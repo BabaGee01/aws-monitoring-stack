@@ -19,13 +19,6 @@ A production-style cloud infrastructure monitoring platform provisioned entirely
 ## Architecture
 
 ![Architecture Diagram](docs/aws_monitoring_stack_architecture.png)
-```
-
-Save the file with **Cmd+S**, then verify it saved:
-
-```bash
-cat README.md | grep -A2 "Architecture"
-```
 
 ## Tech Stack
 
