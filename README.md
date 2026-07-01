@@ -16,7 +16,7 @@ A production-style cloud infrastructure monitoring platform provisioned entirely
 - Configures CloudWatch alarms with SNS email notifications for CPU threshold breaches
 - All infrastructure managed as code — reproducible, version-controlled, and destroyable in one command
 
-## Architecture
+## Project Architecture
 
 ![Architecture Diagram](docs/aws_monitoring_stack_architecture.png)
 
