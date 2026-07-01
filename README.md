@@ -99,7 +99,7 @@ Access your stack:
 ## Project Structure
 
 ```
-aws-monitoring-stack/
+aws_monitoring_stack/
 ├── terraform/
 │   ├── main.tf
 │   ├── variables.tf
