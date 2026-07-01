@@ -18,28 +18,13 @@ A production-style cloud infrastructure monitoring platform provisioned entirely
 
 ## Architecture
 
+![Architecture Diagram](docs/aws_monitoring_stack_architecture.png)
 ```
-┌─────────────────────────────────────────┐
-│              AWS eu-west-2              │
-│                                         │
-│  ┌──────────────────────────────────┐   │
-│  │         VPC 10.0.0.0/16         │   │
-│  │                                  │   │
-│  │  ┌────────────────────────────┐  │   │
-│  │  │   Public Subnet 10.0.1.0  │  │   │
-│  │  │                            │  │   │
-│  │  │  ┌──────────────────────┐  │  │   │
-│  │  │  │   EC2 t3.small       │  │  │   │
-│  │  │  │  - Prometheus :9090  │  │  │   │
-│  │  │  │  - Grafana    :3000  │  │  │   │
-│  │  │  │  - Node Exporter     │  │  │   │
-│  │  │  │           :9100      │  │  │   │
-│  │  │  └──────────────────────┘  │  │   │
-│  │  └────────────────────────────┘  │   │
-│  └──────────────────────────────────┘   │
-│                                         │
-│  CloudWatch Alarms ──► SNS ──► Email    │
-└─────────────────────────────────────────┘
+
+Save the file with **Cmd+S**, then verify it saved:
+
+```bash
+cat README.md | grep -A2 "Architecture"
 ```
 
 ## Tech Stack
@@ -124,4 +109,4 @@ terraform destroy
 
 ## Author
 
-Jide Oloko — [LinkedIn](https://www.linkedin.com/in/jide-oloko-2a4bb588) | 
+Jide Oloko — [LinkedIn](https://www.linkedin.com/in/jide-oloko-2a4bb588) | [Medium](https://medium.com/@sb.oloko) | [Project Portfolio](https://babagee01.github.io/)
